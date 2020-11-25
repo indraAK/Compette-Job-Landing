@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap");
+
+// Variables
+$font-family-sans: "Asap", sans-serif;
+$default-font-size: 1.6rem;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$line-height: 1.5;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+body {
+   background: #e5e5e5;
+   font-family: $font-family-sans;
+   font-size: $default-font-size;
+   font-weight: $font-weight-regular;
+   line-height: $line-height;
+   min-height: 100vh;
+}
+
+.container {
+   width: 90%;
+   margin: 0 auto;
+}
+
+@import "header";
+@import "reason";
+@import "featured";
+@import "subscribe";

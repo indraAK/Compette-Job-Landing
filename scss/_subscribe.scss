@@ -1,0 +1,93 @@
+.subscribe {
+   padding: 7rem 0;
+
+   &__box {
+      max-width: 75rem;
+      min-height: 25rem;
+      margin: 0 auto;
+      padding: 3.5rem;
+      border-radius: 2rem;
+      background-color: #10495c;
+      background-image: url(../images/union.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      box-shadow: 0 8px 60px rgba(16, 73, 92, 0.25);
+   }
+
+   &__title {
+      color: #ffffff;
+      font-size: 2.6rem;
+      font-weight: $font-weight-medium;
+   }
+
+   &__text {
+      color: #b0c3c9;
+      font-size: 1.6rem;
+      margin-top: 0.7rem;
+   }
+
+   &__form {
+      max-width: 51.9rem;
+      margin: 5rem auto 0;
+
+      .input-group {
+         display: flex;
+         position: relative;
+
+         .input-email {
+            flex: 1;
+            display: block;
+            width: 100%;
+            background-color: #fff;
+            color: #10495c;
+            padding: 1.2rem;
+            font-family: inherit;
+            font-size: 1.6rem;
+            outline: none;
+            border: none;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+            border-top-right-radius: 5.6rem;
+            border-bottom-right-radius: 5.6rem;
+
+            &::placeholder {
+               color: #cacad2;
+               font-family: inherit;
+               font-size: 1.5rem;
+
+               @media screen and (max-width: 480px) {
+                  font-size: 1.3rem;
+               }
+            }
+         }
+
+         .btn {
+            display: inline-block;
+            width: 17rem;
+            height: 100%;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 5.6rem;
+            background-color: #f2ad5f;
+            color: #986121;
+            font-family: inherit;
+            font-size: 1.6rem;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            position: absolute;
+            top: 0;
+            right: -1px;
+            box-shadow: 0 3px 10px rgba(242, 173, 95, 0.25);
+
+            @media screen and (max-width: 480px) {
+               font-size: 1.35rem;
+               width: initial;
+               padding: 0 2rem;
+            }
+         }
+      }
+   }
+}

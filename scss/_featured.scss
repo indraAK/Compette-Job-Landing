@@ -1,0 +1,111 @@
+.featured {
+   padding: 7rem 0;
+
+   .title {
+      color: #0f1d37;
+      font-size: 4.3rem;
+      font-weight: $font-weight-semi-bold;
+      text-align: center;
+      line-height: 55px;
+
+      @media screen and (max-width: 992px) {
+         font-size: 3.5rem;
+      }
+
+      @media screen and (max-width: 576px) {
+         font-size: 3rem;
+      }
+   }
+
+   .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem; // [row-gap] [column-gap]
+      margin: 7rem 0;
+
+      @media screen and (max-width: 992px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (max-width: 576px) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   .card {
+      background-color: #fff;
+      padding: 3rem;
+      border-radius: 1.6rem;
+      box-shadow: 0 5px 20px rgba(202, 202, 210, 0.25);
+
+      &__header {
+         .company {
+            display: flex;
+            align-items: center;
+
+            &__logo {
+               width: 5rem;
+               margin-right: 1.5rem;
+            }
+
+            &__name {
+               color: #0f1d37;
+               font-size: 2rem;
+               font-weight: $font-weight-semi-bold;
+            }
+
+            &__location {
+               color: #cacad2;
+               font-size: 1.35rem;
+            }
+         }
+      }
+
+      &__body {
+         .price {
+            color: #10495c;
+            font-size: 4.5rem;
+            font-weight: $font-weight-semi-bold;
+            margin: 4rem 0;
+
+            .year {
+               font-size: 2rem;
+               color: #0f1d37;
+            }
+         }
+
+         .job-position {
+            color: #0f1d37;
+            font-size: 2.3rem;
+            line-height: 30px;
+            font-weight: $font-weight-semi-bold;
+
+            @media screen and (max-width: 768px) {
+               font-size: 1.8rem;
+            }
+         }
+
+         .badge-time {
+            display: inline-block;
+            background-color: #ebfafc;
+            color: #65d9e4;
+            border-radius: 6px;
+            padding: 0.7rem 1.5rem;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: $font-weight-medium;
+            margin-top: 1.3rem;
+         }
+      }
+   }
+
+   .cta {
+      text-align: center;
+
+      .more-info {
+         color: #0f1d37;
+         font-size: 16px;
+         text-transform: uppercase;
+      }
+   }
+}
